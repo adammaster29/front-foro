@@ -1,0 +1,113 @@
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* .padre_Inicio{} */
+.padre_Inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******************** NAVEGACIÓN ******************************/
+.padre_Navbar {
+  border: 1px solid #c2c2c2;
+  width: 100%;
+}
+.hijo_Navbar {
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+.contenedor_MenuAmburguesa,
+.contenedor_Button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+}
+.contenedor_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+/* +***************************modal****************** */
+.padreModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000091;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  position: fixed;
+}
+.padreLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000c7;
+  width: 100%; /* Cambiado a 100vw */
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  position: fixed;
+}
+
+
+
+/********************* aqui va todo los estilos de boxicon**************************** */
+.bx {
+  font-size: 35px;
+}
+.bx-menu {
+  font-size: 70px;
+  cursor: pointer;
+  /* color: blue; */
+}
+.bx-search-alt {
+  z-index: 3;
+  position: absolute;
+  margin-left: 27%;
+}
+
+/* *****************************estilos de la tabla********************************* */
+.padre_tabla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+table {
+  border: 1px solid #a09e9e;
+  width: 80%;
+  text-align: center;
+  margin-top: 2rem;
+}
+td {
+  border: 1px solid #8a8787;
+  /* background: #0ace831e;
+   */
+  color: #7e7b7b;
+  font-weight: 500;
+  /* background: rgba(4, 98, 238, 0.514); */
+}
+th {
+  background: rgb(4, 97, 238);
+  color: #fff;
+}

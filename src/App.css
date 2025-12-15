@@ -1,113 +1,218 @@
-/* tailwind */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html, body {
+body {
   margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f9c5d1, #cdb4db);
 }
 
-/* .padre_Inicio{} */
-.padre_Inicio {
+.container {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/******************** NAVEGACIÓN ******************************/
-.padre_Navbar {
-  border: 1px solid #c2c2c2;
-  width: 100%;
-}
-.hijo_Navbar {
-  display: flex;
-  height: 100px;
-  justify-content: space-around;
-  align-items: center;
-}
-.contenedor_MenuAmburguesa,
-.contenedor_Button {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 400px;
-}
-.contenedor_input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-/* +***************************modal****************** */
-.padreModal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #00000091;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  position: fixed;
-}
-.padreLogin {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #000000c7;
-  width: 100%; /* Cambiado a 100vw */
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 6;
-  position: fixed;
-}
-
-
-
-/********************* aqui va todo los estilos de boxicon**************************** */
-.bx {
-  font-size: 35px;
-}
-.bx-menu {
-  font-size: 70px;
-  cursor: pointer;
-  /* color: blue; */
-}
-.bx-search-alt {
-  z-index: 3;
-  position: absolute;
-  margin-left: 27%;
-}
-
-/* *****************************estilos de la tabla********************************* */
-.padre_tabla {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-table {
-  border: 1px solid #a09e9e;
-  width: 80%;
   text-align: center;
-  margin-top: 2rem;
-}
-td {
-  border: 1px solid #8a8787;
-  /* background: #0ace831e;
-   */
-  color: #7e7b7b;
-  font-weight: 500;
-  /* background: rgba(4, 98, 238, 0.514); */
-}
-th {
-  background: rgb(4, 97, 238);
   color: #fff;
+}
+
+.contador h1,
+.sorpresa h1 {
+  font-size: 2.5rem;
+}
+
+.tiempo {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tiempo div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.tiempo span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sorpresa p {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.foto-placeholder {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.foto {
+  margin-top: 20px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f9c5d1, #cdb4db);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contador h1,
+.sorpresa h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.contador h2,
+.sorpresa h2 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.tiempo {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap; /* permite que los bloques se acomoden en varias filas */
+}
+
+.tiempo div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 15px;
+  min-width: 60px;
+}
+
+.tiempo span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sorpresa p {
+  max-width: 400px;
+  margin: 20px auto;
+  font-size: 1rem;
+}
+
+.foto-placeholder {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.foto {
+  margin-top: 20px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* MEDIA QUERIES PARA CELULARES Y TABLETS */
+@media (max-width: 768px) {
+  .contador h1,
+  .sorpresa h1 {
+    font-size: 2rem;
+  }
+
+  .contador h2,
+  .sorpresa h2 {
+    font-size: 1.3rem;
+  }
+
+  .tiempo div {
+    padding: 10px;
+    min-width: 50px;
+  }
+
+  .tiempo span {
+    font-size: 1.5rem;
+  }
+
+  .sorpresa p {
+    font-size: 0.9rem;
+    max-width: 300px;
+  }
+
+  .foto {
+    width: 180px;
+    height: 180px;
+  }
+
+  .foto-placeholder {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contador h1,
+  .sorpresa h1 {
+    font-size: 1.5rem;
+  }
+
+  .contador h2,
+  .sorpresa h2 {
+    font-size: 1.1rem;
+  }
+
+  .tiempo div {
+    padding: 8px;
+    min-width: 45px;
+  }
+
+  .tiempo span {
+    font-size: 1.2rem;
+  }
+
+  .sorpresa p {
+    font-size: 0.8rem;
+    max-width: 250px;
+  }
+
+  .foto {
+    width: 150px;
+    height: 150px;
+  }
+
+  .foto-placeholder {
+    width: 150px;
+    height: 150px;
+  }
 }

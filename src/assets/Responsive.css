@@ -1,0 +1,67 @@
+@media screen and (max-width:768px) {
+    .hijo_Navbar h1{
+        font-size: 30px;
+    }
+    .btn-agregar{
+        width: 150px;
+      }
+      /* .contenedor_input{
+        border: 1px solid #000;
+      } */
+      .buscador{
+        width: 100%;
+      }
+    .bx-menu {
+        font-size: 60px;
+      }
+      .bx-x,.bx-edit{
+        font-size: 30px;
+      }
+    
+}
+/* aqui empieza media query en 480px */
+@media screen and (max-width:480px) {
+    .hijo_Navbar h1{
+        font-size: 20px;
+    }
+    .bx-menu {
+        font-size: 50px;
+      }
+      .contenedor_Button{
+        /* border: 1px solid #000; */
+        width: 200px;
+      }
+      .loginName{
+        font-size: 20px;
+      }
+      .btn-agregar{
+        width: 100px;
+      }
+      .bx-x,.bx-edit{
+        font-size: 25px;
+      }
+    
+}
+/* aqui empieza media query en 350px */
+@media screen and (max-width:350px) {
+    .hijo_Navbar h1{
+        font-size: 20px;
+    }
+    .loginName{
+        font-size: 18px;
+      }
+      .btn-agregar{
+        width: 90px;
+        height: 35px;
+      }
+      .agregar-tema-span{
+        font-size: 14px;
+      }
+    .bx-menu {
+        font-size:45px;
+      }
+      .bx-x,.bx-edit{
+        font-size: 20px;
+      }
+    
+}
